@@ -1,0 +1,29 @@
+a{
+	color: red;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+h1{
+	font-family: helvetica, sans-serif;
+}
+/*css traduzido para o portugues significa
+folha de estilo em cascata, porque o que
+for escrito por ulltimo que será
+considerado.*/
+a{
+	color: yellow;
+}
+/*id*/
+#segundo{
+	color: orange;
+}
+/*apenas os "<a></a>" que tem class link
+recebem alterações.*/
+
+/*ou ainda, da forma abaixo se deixa todo
+detalhado o tipo especifico que recebe
+este estilo*/
+body p a.link{
+	color: green;
+}
