@@ -1,7 +1,21 @@
+QUALQUER DUVIDA CONSULTA "listas de comandos úteis do GIT" no google <https://gist.github.com/leocomelli/2545add34e4fec21ec16>
+
 teoria basica do git:
 file>>>>(git add)>>>>>>container>>>>>>(commit)>>>>>.git
 
-comandos principais:
+COMANDOS PRINCIPAIS:############################################################
+git config --global user.email "email"  (salvo o email)
+git config --global user.name "name"    (salvo o nome do usuario)
+
+git config user.email "email"           (salva email de forma local)
+git config user.name "Mona Lisa"        (nome para o repositório específico)
+
+cat .gitconfig  (indica nome e email cadastrado)
+
+git rm file.txt     (remove arquivo/é bom >>>>>>>>>>git commit -m "file.txt removido")
+git rm --cached file.txt    (caso o primeiro codigo não funcione é bom usar este como alternativo)
+git rm -r diretorio     (para remover pastas)
+
 git init
 git status
 git add
@@ -11,8 +25,9 @@ git remote
 git clone
 git push
 git pull
+COMANDOS PRINCIPAIS:############################################################
 
-
+git config --global core.editor vim     (define editor)
 
 clear (limpa a tela do terminal)
 cd	dir	ls	pwd	(comandos para naegação)
@@ -24,17 +39,21 @@ touch a.txt b.txt (cria multiplos arquivos)
 touch pasta/arquivo (segue o caminho ate cria um arquivo)
 
 git version (informa a verção do git)
+
 git config --global user.name "" (salva o nome do usuario)
 git config --global user.email "" (salva email do usuario)
+
 git config user.name (informa o nome do usuario)
 git config user.email (informa email do usuario)
+
 git config core.editor informa editor padrão)
+git config --global core.editor vim     (define editor)
 git config --global core.editor "" (entrada: caminho do executavel do editor, serve para selecionar o editor padrao)
 
 
 
 
-	CRIAÇÃO E MANIPULAÇÃO DE ARQUIVOS.
+CRIAÇÃO E MANIPULAÇÃO DE ARQUIVOS.##############################################
 git init (cria o .git)		"()" esta servindo como notação de comentario
 
 (exemplo):
@@ -52,7 +71,7 @@ git add * (adiciona todos)
 
 master >>>>>>>>>>>> head   (master é o primeiro arquivo criado, os heads sao os arquivos seguintes)
 
-
+CRIAÇÃO E MANIPULAÇÃO DE ARQUIVOS.##############################################
 
 git log (exibe os comentarios dos commits e detales de data, etc)
 git log --oneline (exibe basicamente os commits)
@@ -75,7 +94,7 @@ git restore --staged <file> (restaurar depois que esta no container (depois do g
 git reset --hard <id do arquivo> (retira do commit)
 
 
-	RAMIFICAÇÕES:
+RAMIFICAÇÕES:###################################################################
 git checkout -b <nome>	(se cria um ramo/galho novo)
 
 git log --oneline --graph --all (serve para ver todos os ramos)
@@ -100,4 +119,4 @@ git clone <https://		>	(clona do github para o pc)
 git push	(envia todas as modificações para o github)
 	PARA PUCHAR ALTERAÇÕES:
 git pull	(baixa alterações do github para o pc)
-
+RAMIFICAÇÕES:###################################################################
