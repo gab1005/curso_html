@@ -1,23 +1,59 @@
 body{
 	font-family: Helvetica, sans-serif;
 }
+a:link, a:visited{
+	color: #ff6600;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
 #wrap{
 	width: 960px;	/*definir a margem por tamanho de pixel*/
 	margin: auto;	/*definir a margem de forma automatica (cetralizar)*/
 	background: #e3e3e3;	/*cor de fundo em exadecimal*/
-
+	padding: 10px 20px;
+	/*overflow: hidden;	== esouto: oculto*/
 }
-header h1{
-	padding: 10px 20px;	/*topo, direita, baixo, esquerda é a ordem de classificação,*/
-	/*padding:10px;		nesse caso 10px sera padrão para todas as medidas*/
-	/*padding: 10px 30px;		nesse caso 10px sera para topo e baixo, e 30px sera para direita e esquerda*/
 
-}
+/*topo, direita, baixo, esquerda é a ordem de classificação,*/
+/*padding:10px;		nesse caso 10px sera padrão para todas as medidas*/
+/*padding: 10px 30px;		nesse caso 10px sera para topo e baixo, e 30px sera para direita e esquerda*/
+
 header nav ul{
 	list-style: none;
-	padding-left: 20px;
+	padding-left: 0px;
 }
 header nav ul li{
 	display: inline-block;
-	padding-right: 10px;
+	margin-right: 10px;
+}
+header nav ul li a{
+	font-size: 18px;
+	color: #ff6600;
+	text-decoration: none;
+}
+header nav ul li a:hover{
+	text-decoration: underline;		/*aparece uma linha de baixo do texto*/
+}
+#content{
+	float: left;	/*flotua o content para esquerda*/
+	width: 660px;
+}
+#sidebar{
+	float: rigth;	/*floatua o sidebar para direita*/
+	width: 300px;
+}
+#sidebar ul{
+	list-style: none;
+}
+#sidebar ul li a{
+	color: ff6600;
+	text-decoration: none;
+}
+#sidebar ul li a:hover{		/*hover = flutuar, mas quer dizer quando o mouse estiver em cima do texto*/
+	text-decoration: underline;
+}
+footer{
+	clear: both;
 }
